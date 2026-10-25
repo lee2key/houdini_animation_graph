@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pythonPanelDocument>
+  <interface name="houdini_animation_graph_editor" label="Animation Graph Editor" icon="MISC_python" showNetworkNavigationBar="false" help_url="">
+    <script><![CDATA[
+from houdini_animation_editor import panel
+
+def onCreateInterface():
+    return panel.create_interface()
+
+def onDestroyInterface():
+    panel.destroy_interface()
+
+def onNodePathChanged(node):
+    panel.on_node_changed(node)
+]]></script>
+    <includeInPaneTabMenu menu_position="0" create_separator="true"/>
+    <includeInToolbarMenu menu_position="0" create_separator="true"/>
+    <help><![CDATA[Edit keyframes for numeric parameters on the selected Houdini node.]]></help>
+  </interface>
+</pythonPanelDocument>
