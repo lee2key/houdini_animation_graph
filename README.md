@@ -9,7 +9,7 @@ A small Houdini Python Panel for inspecting and editing keyframes on numeric par
 3. Edit the copied JSON so its `hpath` value is the absolute path to this project. Example:
 
    ```json
-   { "hpath": "C:/tools/Hodini Graph Editor" }
+   { "hpath": "C:/tools/houdini_animation_graph" }
    ```
 
 4. Restart Houdini. In any pane's type menu, choose **Animation Graph Editor**.
